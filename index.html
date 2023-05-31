@@ -1,0 +1,613 @@
+<!--문서선언: html 문서를 시작합니다.-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--info-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="멍기,멍기제안서,포트폴리오">
+    <meta name="author" content="임현기">
+    <meta name="description" content="멍기제안서">
+    <meta property="og:description" content="meongki_portfolio">
+    <meta property="og:image" content="./img/thunill.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>M · K Propose</title>
+    <!--favicon-->
+    <link href="/img/favicon/favicon.ico" rel="icon">
+    <link rel="icon" href="/img/favicon/favicon-16x16.png">
+    <!--CSS 리셋-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!--폰트-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--부트스트랩 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--CSS 지정-->
+    <link rel="stylesheet" href="./css/font_face.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:0px) and (max-width:1200px)">
+    <link rel="stylesheet" href="./css/mobile.css" media="(min-width:0px) and (max-width:992px)">
+    <link rel="stylesheet" href="./css/header.css" media="(min-width:0px) and (max-width:992px)">
+    <!--스크립트-->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script/header.js"></script>
+    <script src="script/scroll.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $("a").on('click', function (event) {
+
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+
+                        scrollTop: $(hash).offset().top
+
+                    }, 800, function () {
+
+                        window.location.hash = hash;
+
+                    });
+
+                }
+
+            });
+
+        });
+    </script>
+    <script>
+    
+    $(function() {
+		$('.pop_close').click(function() {
+			$('.popup').css('display','none');
+		})
+	});
+    </script>
+    <style>
+          .popup {
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            width:20%;
+            margin-left:-10%;
+            height: 200px;
+            margin-top: -200px;
+            z-index: 1000;
+            background: white;
+            border: 1px solid #d1d8dd;
+            box-shadow: 0 0 6px 1px rgb(0 0 0 / 30%);
+     }
+     .pop_close{
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        line-height: 50px;
+        position: relative;
+        top: 50px;
+        background: #000;
+        width: 150px;
+        height: 50px;
+     }
+     .pop_close a{
+        
+        text-align: center;
+        color: #fff;
+        text-decoration: none; 
+     }
+    </style>
+
+
+</head>
+
+
+<!----------------------------------------------------------------바디영역--------------------------------------------------------------->
+
+<body>
+   <div class="popup" style="display: block;">
+        
+        ※홈페이지 보수-변경 중입니다.※
+
+        <div class="pop_close"><a href="#">닫기</a></div>
+    </div>
+  
+<div class="top_bt"><a href="#top">TOP</a></div>
+ 
+
+    <!---------------햄버거영역--------------->
+    <div class="hambg">
+        <div class="ham">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </div>
+    </div>
+
+    <div class="dim">
+        <ul class="dim_menu">
+            <li class="ham_list"><a href="#about_location">About</a></li>
+            <li class="ham_list"><a href="#portfolio_location">Portfolio</a></li>
+            <li class="ham_list"><a href="#design_location">Design</a></li>
+            <li class="ham_list"><a href="#contact_location">Contact</a></li>
+            <li class="contact_m"><a href="mailto:dkraktmdfl@gmail.com">dkraktmdfl@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <!---------------Web 헤드영역--------------->
+    <header class="header">
+        <div class="header_inner">
+            <div class="header_left">
+                <h1 class="header_logo">
+                    <a class="" href="/">
+                        <span class="header_logo_txt">로고</span>
+                    </a>
+                </h1>
+            </div>
+
+            <!--네비게이션-->
+            <div class="header_nav">
+                <ul class="nav_menu">
+                    <li class="nav_list "><a href="#about_location">ABOUT</a></li>
+                    <li class="nav_list "><a href="#portfolio_location">PORTFOLIO</a></li>
+                    <li class="nav_list "><a href="#design_location">DESIGN</a></li>
+                    <li class="nav_list "><a href="#contact_location">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!---------------컨텐츠 영역--------------->
+
+    <!-------------------------------section_intro------------------------------->
+
+    <div class="container-fluid intro_video clear" id="top">
+        <div class="intro_arrow"><img src="./img/arrow_w.png" alt=""></div>
+        <div class="row intro_wrap">
+            <video class="center-block pc_vi" loop="loop" muted="muted" autoplay="autoplay" playsinline>
+                <source src="videos/intro_04.mp4" type="video/mp4">
+            </video>
+            <video class="center-block mo_vi" loop="loop" muted="muted" autoplay="autoplay" playsinline>
+                <source src="videos/intro_mo.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-------------------------------se_profile------------------------------->
+
+    <section class="profile">
+
+        <div id="about_location"></div>
+
+        <div class="container profile_wrap">
+            <div class="row">
+                <div class="col-md-3 Profile_tit">
+                    <h2>LIM</h2>
+                    <h3>HYUNKI</h3>
+                    <h4>Emotion Designer</h4>
+                    <div class="profile_img"></div>
+                </div>
+                <div class="col-md-5 Profile_con_01">
+                    <div class="line_01">
+                    </div>
+                    <div class="Profile_profile_01">
+                        <h5>Profile</h5>
+                        <p>1992.03.30</p>
+                        <p>010.9172.6798</p>
+                        <p>dkraktmdfl@gmail.com</p>
+                        <p>경기도의정부시 회룡로 105번길 37</p>
+                    </div>
+                    <div class="Profile_profile_01">
+                        <h5>Objectives</h5>
+                        <p>마음을 움직이는 디자이너</p>
+                        <p>소통하는 디자이너</p>
+                        <p>코딩하는 디자이너</p>
+                    </div>
+                    <div class="Profile_profile_01">
+                        <h5>Personality</h5>
+                        <p>Cerative</p>
+                        <p>Positive</p>
+                        <p>Sensitive</p>
+                        <p>Communication</p>
+                    </div>
+                </div>
+                <div class="col-md-4 Profile_con_02">
+                    <div class="Profile_profile_02">
+                        <h5>Education</h5>
+                        <p>2011&nbsp;&nbsp;&nbsp;효자고등학교(이과)졸업</p>
+                        <p>2012&nbsp;&nbsp;&nbsp;인덕대학교 기계설계과 입학</p>
+                        <p>2016&nbsp;&nbsp;&nbsp;인덕대학교 기계설계과 졸업</p>
+                        <p>2016&nbsp;&nbsp;&nbsp;국가 국비지원훈련 웹디자인 과정</p>
+                        <p>2017&nbsp;&nbsp;&nbsp;신한대학교 산업디자인과 편입학</p>
+                        <p>2019&nbsp;&nbsp;&nbsp;신한대학교 산업디자인과 졸업</p>
+                    </div>
+                    <div class="Profile_profile_02">
+                        <h5>Experience</h5>
+                        <p>2011&nbsp;&nbsp;&nbsp;인덕대학교 학과대표/학과 1등</p>
+                        <p>2012&nbsp;&nbsp;&nbsp;인덕대학교 학생회/학과 임원직</p>
+                        <p>2016&nbsp;&nbsp;&nbsp;KG엔지니어링 설계직</p>
+                        <p>2016&nbsp;&nbsp;&nbsp;이랜드 애슐리 핫 파트 조리사</p>
+                        <p>2017&nbsp;&nbsp;&nbsp;Blue Awards 상품 문화 디자인 입상</p>
+                        <p>2018&nbsp;&nbsp;&nbsp;KB영상광고 공모전 출품</p>
+                        <p>2018&nbsp;&nbsp;&nbsp;산업디자인 졸업전시회 작품</p>
+                        <p>2019~&nbsp;시너지 이십일 광고대행사 웹디자인 업무</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-------------------------------se_ability------------------------------->
+    <section class="se_ability">
+
+
+        <div class="container ability_wrap">
+            <div class="row">
+                <div class="col-md-3 ability_tit">
+                   
+                </div>
+                <div class="col-md-5 ability_con_01">
+                    <div class="line_02">
+                    </div>
+                    <div class="ability_profile_01">
+                        <h5>LICENSE</h5>
+                        <p>2019&nbsp;&nbsp;&nbsp;웹디자인기능사</p>
+                        <p>2017&nbsp;&nbsp;&nbsp;GTQ포토샵1급</p>
+                        <p>2016&nbsp;&nbsp;&nbsp;컴퓨터활용능력2급</p>
+                        <p>2016&nbsp;&nbsp;&nbsp;ATC2급</p>
+                        <p>2010&nbsp;&nbsp;&nbsp;1종보통운전면허</p>
+                    </div>
+                    <div class="ability_profile_01">
+
+                        <h5>hobby</h5>
+                        <div class="hobby_img">
+                            <img src="./img/hobby_01.png" alt="">
+                            <img src="./img/hobby_02.png" alt="">
+                            <img src="./img/hobby_03.png" alt="">
+                            <img src="./img/hobby_04.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ability_con_02 skills">
+                    <h5>SKILL</h5>
+                    <div class="skill_wrap">
+
+                        <img class="skill_logo" src="./img/logo/ps.png" alt="">
+
+                    </div>
+                    <div class="skill_wrap">
+
+                        <img class="skill_logo" src="./img/logo/ai.png" alt="">
+
+                    </div>
+                    <div class="skill_wrap">
+
+                        <img class="skill_logo" src="./img/logo/pr.png" alt="">
+
+                    </div>
+                    <div class="skill_wrap">
+
+                        <img class="skill_logo" src="./img/logo/ae.png" alt="">
+
+                    </div>
+                    <div class="skill_wrap">
+
+                        <img class="skill_logo" src="./img/logo/fc.png" alt="">
+
+                    </div>
+                   
+                    <div class="skill_wrap">
+
+                        <img class="skill_logo" src="./img/logo/html.png" alt="">
+
+                    </div>
+                    <div class="skill_wrap">
+
+                        <img class="skill_logo" src="./img/logo/css.png" alt="">
+
+                    </div>
+                    <div class="skill_wrap">
+
+                        <img class="skill_logo" src="./img/logo/js.png" alt="">
+
+                    </div>
+                    <div class="skill_wrap">
+
+                        <img class="skill_logo" src="./img/logo/Sketch.png" alt="">
+
+                    </div>
+                    <div class="skill_wrap">
+
+                        <img class="skill_logo" src="./img/logo/figma.png" alt="">
+
+                    </div>
+
+
+                    
+                </div>
+
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section class="plus_minus">
+        <div class="plus_minus_wrap">
+            <img src="./img/plus_bg.png" alt="">
+        </div>
+    </section>
+
+    <!-------------------------------Design_port------------------------------->
+
+
+    <section class="design_port">
+
+        <div id="portfolio_location"></div>
+
+        <div class="container">
+            <h3 class="port_title text-center">Portfolio</h3>
+            <h4 class="text-center">project</h4>
+            <div class="row">
+                <div class="col-md-12 clear">
+                    <div class="JR_PF pf">
+
+                        <a href="./portfolio/jr_p.html">
+                            <div class="pf_dim">
+                                <p class="text-center">JAGUAR LANDROVER</p>
+                                <div class="view_point">View+</div>
+                            </div>
+                            <img src="./img/pf/jr_intro.png" alt="재규어_intro">
+                            <div class="mo_view_point">JAGUAR LANDROVER<br> View+</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 clear">
+                    <div class="SK_PF pf">
+
+                        <a href="./portfolio/sk_p.html">
+                            <div class="pf_dim">
+                                <P class="text-center">SKT</P>
+                                <div class="view_point">View+</div>
+                            </div>
+                            <img class="sk_pc" src="./img/pf/sk_intro.png" alt="SK_intro">
+                            <img class="sk_mo" src="./img/pf/sk_intro2.png" alt="SK_intro">
+                            <div class="mo_view_point">SKT<br>View+</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8 clear">
+                    <div class="LG_PF pf">
+
+                        <a href="./portfolio/lg_p.html">
+                            <div class="pf_dim">
+                                <P class="text-center">BUS JOK</P>
+                                <div class="view_point">View+</div>
+                            </div>
+                            <img src="./img/pf/lg_intro.jpg" alt="LG_intro">
+                            <div class="mo_view_point">BUS JOK<br>View+</div>
+                        </a>
+                    </div>
+                    <div class="WR_PF pf">
+
+                        <a href="./portfolio/wr_p.html">
+                            <div class="pf_dim">
+                                <P class="text-center">Woori bank</P>
+                                <div class="view_point">View+</div>
+                            </div>
+                            <img src="./img/pf/wr_intro.png" alt="WR_intro">
+                            <div class="mo_view_point">Woori bank<br>View+</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!------------se_look------------>
+
+
+
+    <section class="make">
+
+
+        <div class="make_wrap">
+            <h2>MAKE DESIGN KEY</h2>
+            <div class="make_cir"><p>METHOD</p></div>
+            <div class="make_cir"><p>MEAN</p></div>
+            <div class="make_cir"><p>MEMORY</p></div>
+        </div>
+
+       
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-----------------------------------Design_etc----------------------------------->
+
+    <section class="design_etc">
+
+        <div id="design_location"></div>
+
+        <div class="container">
+            <h3 class="design_title text-center">Design</h3>
+            <h4 class="text-center">etc</h4>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4 text-center De">
+                    <a href="design/pro.html" class="content_link">
+                        <img src="img/design/DE_01.jpg" alt="" class="content_img">
+                        <div class="content_1 port">
+                            <figcaption class="content_figure">
+                                <div class="s_tit">
+                                    <strong>프로모션</strong>
+                                </div>
+                                <p>KB차차차/스카이라이프/바로고</p>
+                            </figcaption>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 text-center De">
+                    <a href="/design/de.html" class="content_link">
+                        <img src="img/design/DE_02.jpg" alt="" class="content_img">
+                        <div class="content_2 port">
+                            <figcaption class="content_figure">
+                                <div class="s_tit">
+                                    <strong>상세페이지</strong>
+                                </div>
+                                <p>피플앤코/멜로디/여신티켓/와디즈..</p>
+                            </figcaption>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 text-center De">
+                    <a href="design/sns_ad.html" class="content_link">
+                        <img src="img/design/DE_03.jpg" class="content_img">
+                        <div class="content_3 port">
+                            <figcaption class="content_figure">
+                                <div class="s_tit">
+                                    <strong>SNS 광고</strong>
+                                </div>
+                                <p>천호엔케어/나누나키친/...</p>
+
+                            </figcaption>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0 text-center De">
+                    <a href="/design/uiux.html" class="content_link">
+                        <img src="img/design/DE_04.jpg" alt="" class="content_img">
+                        <div class="content_4 port">
+                            <figcaption class="content_figure">
+                                <div class="s_tit">
+                                    <strong>UXUI</strong>
+                                </div>
+                                <p>IDFINE/오늘은</p>
+                            </figcaption>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0 text-center De">
+                    <a href="/design/br.html" class="content_link">
+                        <img src="img/design/DE_05.jpg" alt="" class="content_img">
+                        <div class="content_5 port">
+                            <figcaption class="content_figure">
+                                <div class="s_tit">
+                                    <strong>브랜딩</strong>
+                                </div>
+                                <p>다한전기/의정부야시장/송PT/대구</p>
+                            </figcaption>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center De">
+                    <a href="design/video.html" class="content_link">
+                        <img src="img/design/DE_06.jpg" class="content_img">
+                        <div class="content_6 port">
+                            <figcaption class="content_figure">
+                                <div class="s_tit">
+                                    <strong>영상</strong>
+                                </div>
+                                <p>KB국민은행/쏘카/천호엔케어..</p>
+
+                            </figcaption>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="contact_location"></div>
+    </section>
+
+
+
+    <!------------se_look------------>
+
+
+
+    <section class="look">
+        <div class="look_wrap">
+            <img src="./img/me_icon.gif" alt="">
+            <h2>looking for solution designer ? </h2>
+            <div class="sub_t">
+                <p>Passion</p>
+                <p>Professional</p>
+                <p>Pleasure</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-----------------------------------se_contact----------------------------------->
+
+    <section class="contact scroll">
+        <div class="contact_txt">
+            <address class="contact_address">
+                <h2>CONTACT&nbsp;&nbsp;ME</h2>
+                <a href="tel:+821091726798">TEL: 010-9172-6798</a>
+                <a href="tel:+82318236834">Fax:031-823-6834</a>
+                <a href="mailto:dkraktmdfl@gmail.com">dkraktmdfl@gmail.com</a>
+            </address>
+        </div>
+    </section>
+
+
+
+
+    <!-----------------------------------footer----------------------------------->
+    <footer>
+        <section class="footer_wrap">
+            <div class="footer_logo">
+                <img src="img//logo/MK_LOGO_W.png" alt="">
+            </div>
+            <div class="footer_txt">
+                <div class="footer_copyright">
+                    <p>Copyright©2021 limhyunki. All rights reserved 본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.</p>
+                    <P>사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.</P>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+</body>
+
+</html>
